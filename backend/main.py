@@ -14,7 +14,11 @@ app = FastAPI(
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Frontend URL
+allow_origins=[
+    "http://localhost:3000",  # for local development
+    "https://civiclens-kct2ujqhh-trons-projects-6218f3d8.vercel.app"  # deployed frontend
+],
+
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -41,4 +45,7 @@ async def health_check() -> JSONResponse:
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True) 
+    import os
+
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
