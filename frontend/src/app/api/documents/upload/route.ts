@@ -3,6 +3,8 @@ import { analyzeDocument } from '@/lib/ai';
 import pdfParse from 'pdf-parse';
 
 export const runtime = 'nodejs'; // This is important for file handling
+console.log("🔥 Starting POST upload handler");
+console.trace(); // Print stack trace
 
 export async function POST(request: Request) {
   try {
