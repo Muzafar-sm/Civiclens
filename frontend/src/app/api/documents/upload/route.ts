@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { analyzeDocument } from '@/lib/ai';
-import pdfParse from 'pdf-parse';
+
 
 export const runtime = 'nodejs'; // This is important for file handling
 console.log("🔥 Starting POST upload handler");
@@ -40,6 +40,7 @@ export async function POST(request: Request) {
     if (file.type === 'application/pdf') {
       try {
         const arrayBuffer = await file.arrayBuffer();
+        const { default: pdfParse } = await import('pdf-parse');
         const pdfData = await pdfParse(Buffer.from(arrayBuffer));
         text = pdfData.text;
         console.log('PDF parsed successfully, text length:', text.length);
