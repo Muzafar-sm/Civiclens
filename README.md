@@ -2,7 +2,7 @@
 
 CivicLens is an AI-powered civic policy analyzer designed to help users analyze legislative documents with advanced insights, summaries, and analysis. This project leverages modern web technologies to provide a seamless and intuitive user experience.
 ![Image](https://private-user-images.githubusercontent.com/88955625/451353079-c49b1cc6-c072-43c6-81e5-220accaa74f0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDkwMzcyMTEsIm5iZiI6MTc0OTAzNjkxMSwicGF0aCI6Ii84ODk1NTYyNS80NTEzNTMwNzktYzQ5YjFjYzYtYzA3Mi00M2M2LTgxZTUtMjIwYWNjYWE3NGYwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjA0VDExMzUxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZkNWQzZWY0MjVhYWYyZjU1OGUyZTU1YWIzZWJlNDY4YTBhZDc2YjExZmM1NWIwNTA5YTU4ZTg0Y2ZlMWIzMmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.PlddyZf85aA0OdFJw4lVR60OygpWzgHVzXJcl8UqKUI)
-
+Visit the live server [here](https://civiclens-kct2ujqhh-trons-projects-6218f3d8.vercel.app/)
 ## Features
 
 - **AI-Powered Analysis**: Utilize artificial intelligence to analyze legislative documents and extract key insights.
