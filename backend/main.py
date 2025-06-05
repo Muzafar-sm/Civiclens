@@ -14,11 +14,7 @@ app = FastAPI(
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-allow_origins=[
-    "http://localhost:3000",  # for local development
-    "https://civiclens-kct2ujqhh-trons-projects-6218f3d8.vercel.app"  # deployed frontend
-],
-
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
