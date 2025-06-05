@@ -24,6 +24,17 @@ app.add_middleware(
 @app.on_event("startup")
 async def startup_event():
     ai_models.initialize_models()
+    
+@app.get("/")
+async def root():
+    return {"message": "CivicLens API is running", "status": "healthy"}
+
+@app.exception_handler(404)
+async def not_found_exception_handler(request, exc):
+    return JSONResponse(
+        status_code=404,
+        content={"message": "Endpoint not found"},
+    )
 
 # Include routers
 app.include_router(document.router, prefix="/api/documents", tags=["documents"])
